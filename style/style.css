@@ -1,0 +1,93 @@
+  body {
+    color: black;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  header h1 {
+    font-weight: medium;
+    font-size: 30px;
+  }
+  
+  header img {
+    width: 110px;
+    height: 60px;
+  }
+  
+  .img1 {
+    margin-right: 50px;
+  }
+  
+  .img2 {
+    margin-left: 20px;
+  }
+  
+  /*Criando estilo para o main (nome/cartão/data) */
+  main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    flex-wrap: nowrap;
+  }
+  
+  main form {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  form label #name {
+    width: 40rem;
+  }
+  
+  form label #card {
+    width: 4rem;
+  }
+  
+  form label #date {
+    width: 5.5rem;
+  }
+  
+  /*Criação do aside (questões e respostas)*/
+  
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quests {
+    margin-bottom: 100px;
+    width: 85%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quests form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .quests form label input {
+    margin-top: 70px;
+  }
+  
+  .quests button {
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 10px 0px;
+    width: 20%;
+    align-self: center;
+  }
