@@ -1,0 +1,76 @@
+body {
+    background: rgb(250,67,17);
+    background: linear-gradient(54deg, rgba(250,67,17,1) 0%, rgba(9,9,121,1) 50%, rgba(255,0,0,1) 100%);  
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main form {
+    border-radius: 20px;
+    box-shadow: 1.5px 1.5px 1px 0px;
+
+    background-color: rgba(255, 255, 255, 0.144);
+    width: 30%;
+    height: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main form h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+main form input {
+    margin-bottom: 20px;
+
+    border-radius: 5px;
+}
+
+main form label {
+    width: 40%;
+    color: white;
+    padding-bottom: 5px;
+    text-align: start;
+}
+
+main form button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 5px 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: white;
+    border: 1.8px solid white;
+    border-radius:  5px;
+    background-color: transparent;
+    
+    transition: 0.6s;
+}
+
+main form button:hover {
+    color: rgba(9,9,121,1);
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+main form p {
+    width: 40%;
+
+    color: white;
+    font-size: small;
+    text-align: center;
+}
