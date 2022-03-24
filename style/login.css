@@ -1,10 +1,26 @@
 body {
-    background: rgb(250,67,17);
-    background: linear-gradient(54deg, rgba(250,67,17,1) 0%, rgba(9,9,121,1) 50%, rgba(255,0,0,1) 100%);  
+    display: grid;
+    grid-template-areas: 
+    "aside main";
+
+    grid-template-columns: 45% 1fr;
+}
+
+aside {
+    background-image: url("/img/maquina.jpg");
+    background-position:center bottom;
+
+    
+    border-radius: 0px 10px 10px 0px;
+
+    grid-area: aside;
 }
 
 main {
-    width: 100vw;
+    grid-area: main;
+
+    background-color: white;
+
     height: 100vh;
     
 
@@ -15,62 +31,83 @@ main {
 
 main form {
     border-radius: 20px;
-    box-shadow: 1.5px 1.5px 1px 0px;
 
-    background-color: rgba(255, 255, 255, 0.144);
-    width: 30%;
-    height: 50%;
+    width: 70%;
+    height: 80%;
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 main form h2 {
-    color: white;
-    margin-bottom: 30px;
+    color: #474747;
+    margin-bottom: 60px;
 }
 
 main form input {
     margin-bottom: 20px;
+    width: 60%;
 
-    border-radius: 5px;
+    color: #474747;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #474747;
+    outline-style: none;
+    cursor: pointer;
+
 }
 
 main form label {
-    width: 40%;
-    color: white;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+    width: 60%;
+
+    color: #474747;
     text-align: start;
+    font-weight: bold;
+
+    transition: 0.5s;
 }
 
 main form button {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    padding: 5px 20px;
+    padding: 10px 40px;
 
     font-weight: bold;
 
     cursor: pointer;
 
     color: white;
-    border: 1.8px solid white;
+    border: none;
     border-radius:  5px;
-    background-color: transparent;
+    background: #4AA96C;
+    
     
     transition: 0.6s;
 }
 
 main form button:hover {
-    color: rgba(9,9,121,1);
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: #4aa96b8f;
 }
 
 main form p {
-    width: 40%;
+    margin-top: 20px;
+    width: 60%;
 
-    color: white;
+    color: #474747;
     font-size: small;
     text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+  body {
+      display: grid;
+      grid-template-areas: 
+      'main main'
+      ;  
+  }
 }
