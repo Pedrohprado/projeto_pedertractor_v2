@@ -1,0 +1,152 @@
+body {
+    background-image: url("/img/colheideira3.jpg");
+    background-position:bottom  bottom;
+    background-size: 80% 100%;
+
+    display: grid;
+    grid-template-areas: 
+    'aside main'
+    ;
+    grid-template-columns: 50% 1fr;
+}
+
+aside {
+    grid-area: aside;
+    height: 100vh;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    height: 100vh;
+
+    border-radius: 15px 0px 0px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form {
+    height: 70%;
+    width: 60%;
+
+
+    padding: 64px 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main form h2 {
+    color: #474747;
+    margin-bottom: 25px;
+
+    width: 100%;
+    text-align: center;
+
+}
+
+
+div.input{
+    width: 100%;
+
+    margin-bottom: 24px;
+    position: relative;
+
+}
+
+input {
+    /*reset appeareance*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+
+    padding: 16px 0;
+
+    border: none;
+    border-bottom: 0.01px solid #4aa96b8f;
+
+    background-color: transparent;
+    outline: none;
+
+    color: #474747;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 40px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    border-radius:  5px;
+    background: #4AA96C;
+    
+    
+    transition: 0.6s;
+}
+
+button:hover {
+    background-color: #4aa96b8f;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: #474747;
+    font-weight: bold;
+
+    transition: 0.4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.input span.error {
+    display: flex;
+
+    padding: 0;
+
+    background-color: darksalmon;
+}
+
+.input span.error.active{
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+main form p {
+    width:100%;
+    margin-top: 30px;
+
+    color: #474747;
+    font-size: small;
+    text-align: center;
+}
+
+@media only screen and (max-width:700px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        'main main'
+        ;  
+      background:none;
+    }
+  }
+
