@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/login2.css">
     
-    <script src="./js/script.js" defer></script>
+    <script src="./js/scriptvallogin.js" defer></script>
 
     <title>Login</title>
 </head>
@@ -24,18 +24,18 @@
             <h2>Bem vindo!</h2>
 
             <div class="input">
-                <input type="text" required>
+                <input type="text" id="name" required>
                 <label for="">Nome:</label>
                 <span class="error"></span>
             </div>
 
             <div class="input">
-                <input type="password" required>
+                <input type="password" id="password" required>
                 <label for="">Senha:</label>
                 <span class="error"></span>
             </div>
 
-            <button type="submit">Entrar</button>
+            <button type="submit" id="btn">Entrar</button>
 
             <p>@Departamento de Treinamento e Qualificação</p>
         </form>
